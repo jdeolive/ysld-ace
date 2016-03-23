@@ -783,28 +783,28 @@ define('ysld/language', ['require','exports','module'], function(require, export
       type: 'bool',
     },
     'x-goodnessOfFit': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-graphic-margin': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-graphic-resize': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-group': {
       type: 'bool',
     },
     'x-repeat': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-maxAngleDelta': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-maxDisplacement': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-minGroupDistance': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-partials': {
       type: 'bool',
@@ -813,22 +813,22 @@ define('ysld/language', ['require','exports','module'], function(require, export
       type: 'bool',
     },
     'x-spaceAround': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-random': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-random-tile-size': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-random-rotation': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-random-symbol-count': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-random-seed': {
-      type: ' scalar'
+      type: 'scalar'
     }
   };
 
