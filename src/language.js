@@ -567,6 +567,7 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'filter': {
       type: ' scalar',
+      snippet: 'filter: \${${1:ATTRIBUTE} ${2:=} ${3:VALUE}}'
     },
     'else': {
       type: ' bool',
@@ -576,6 +577,11 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'uom': {
       type: ' scalar',
+      values: [
+        'pixel',
+        'metre',
+        'foot'
+      ]
     },
     'anchor': {
       type: ' tuple',
@@ -616,9 +622,19 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'stroke-linejoin': {
       type: ' scalar',
+      values: [
+        'mitre',
+        'round',
+        'bevel'
+      ]
     },
     'stroke-linecap': {
       type: ' scalar',
+      values: [
+        'butt',
+        'round',
+        'square'
+      ]
     },
     'stroke-dasharray': {
       type: ' scalar',
@@ -644,15 +660,28 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'font-style': {
       type: ' scalar',
+      values: [
+        'normal',
+        'italic',
+        'oblique'
+      ]
     },
     'font-weight': {
       type: ' scalar',
+      values: [
+        'normal',
+        'bold'
+      ]
     },
     'priority': {
       type: ' scalar',
     },
     'placement': {
       type: ' scalar',
+      values: [
+        'point',
+        'line'
+      ]
     },
     'color-map': {
       type: ' mapping',
@@ -674,6 +703,10 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'mode': {
       type: ' scalar',
+      values: [
+        'normalize',
+        'histogram'
+      ]
     },
     'gamma': {
       type: ' scalar',
@@ -686,7 +719,27 @@ define('ysld/language', ['require','exports','module'], function(require, export
         'triangle',
         'cross',
         'x',
-        'star'
+        'star',
+        'square',
+        'circle ',
+        'triangle',
+        'star',
+        'cross ',
+        'x',
+        'shape://vertline',
+        'shape://horline',
+        'shape://slash',
+        'shape://backslash',
+        'shape://dot',
+        'shape://plus',
+        'shape://times',
+        'shape://oarrow',
+        'shape://carrow',
+        'extshape://triangle',
+        'extshape://emicircle',
+        'extshape://triangleemicircle',
+        'extshape://narrow',
+        'extshape://sarrow'
       ]
     },
     'url': {
@@ -694,9 +747,22 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'format': {
       type: ' scalar',
+      values: [
+        'image/gif',
+        'image/jpeg',
+        'image/png',
+        'image/bmp',
+        'image/svg+xml',
+        'image/tiff'
+      ]
     },
     'type': {
       type: ' scalar',
+      values: [
+        'ramp',
+        'intervals',
+        'values'
+      ]
     },
     'radius': {
       type: ' scalar',
@@ -754,6 +820,30 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'x-composite': {
       type: ' scalar',
+      values: [
+        'copy',
+        'destination',
+        'source-over',
+        'destination-over',
+        'source-in',
+        'destination-in',
+        'source-out',
+        'destination-out',
+        'source-atop',
+        'destination-atop',
+        'xor',
+        'multiply',
+        'screen',
+        'overlay',
+        'darken',
+        'lighten',
+        'color-dodge',
+        'color-burn',
+        'hard-light',
+        'soft-light',
+        'difference',
+        'exclusion'
+      ]
     },
     'x-composite-base': {
       type: 'bool',
@@ -765,13 +855,13 @@ define('ysld/language', ['require','exports','module'], function(require, export
       type: 'bool',
     },
     'x-labelPriority': {
-      type: ' scalar',
+      type: 'scalar',
     },
     'x-allowOverruns': {
       type: 'bool',
     },
     'x-autoWrap': {
-      type: ' scalar',
+      type: 'number',
     },
     'x-conflictResolution': {
       type: 'bool',
@@ -790,6 +880,11 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'x-graphic-resize': {
       type: 'scalar',
+      values: [
+        'none',
+        'proportional',
+        'stretch'
+      ]
     },
     'x-group': {
       type: 'bool',
@@ -817,12 +912,20 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'x-random': {
       type: 'scalar',
+      values: [
+        'free',
+        'grid'
+      ]
     },
     'x-random-tile-size': {
       type: 'scalar',
     },
     'x-random-rotation': {
       type: 'scalar',
+      values: [
+        'none',
+        'free'
+      ]
     },
     'x-random-symbol-count': {
       type: 'scalar',
