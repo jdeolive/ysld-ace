@@ -585,9 +585,11 @@ define('ysld/language', ['require','exports','module'], function(require, export
     },
     'anchor': {
       type: ' tuple',
+      snippet: 'anchor: [${1:0.5}, ${2:0.5}]'
     },
     'displacement': {
       type: ' tuple',
+      snippet: 'displacement: [${1:0}, ${2:0}]'
     },
     'opacity': {
       type: ' scalar',
