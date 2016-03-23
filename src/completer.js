@@ -71,18 +71,24 @@ define('ysld/completer', ["require", "exports", "module"], function(require, exp
       else if (line.kvp) {
         // if this line has a key complete from this line
         var el = lang.elements[line.key];
-        if (el && el.values) {
-          callback(null, el.values.map(function(v) {
-            // caption: caption,
-            //   snippet: s.content,
-            //   meta: s.tabTrigger && !s.name ? s.tabTrigger + "\u21E5 " : "snippet",
-            //   type: "snippet"
-            return {
-              caption: v,
-              snippet: v + '\n',
-              type: 'snippet'
-            }
-          }));
+        if (el) {
+          var values = el.values;
+          if (!values && el.type == 'bool') {
+            values = ['true', 'false'];
+          }
+          if (values) {
+            callback(null, values.map(function(v) {
+              // caption: caption,
+              //   snippet: s.content,
+              //   meta: s.tabTrigger && !s.name ? s.tabTrigger + "\u21E5 " : "snippet",
+              //   type: "snippet"
+              return {
+                caption: v,
+                snippet: v + '\n',
+                type: 'snippet'
+              }
+            }));
+          }
         }
       }
       else {

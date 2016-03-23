@@ -569,7 +569,7 @@ define('ysld/language', ['require','exports','module'], function(require, export
       type: ' scalar',
     },
     'else': {
-      type: ' scalar',
+      type: ' bool',
     },
     'geometry': {
       type: ' scalar',
@@ -750,37 +750,37 @@ define('ysld/language', ['require','exports','module'], function(require, export
       type: 'scalar',
     },
     'x-FirstMatch': {
-      type: ' scalar',
+      type: ' bool',
     },
     'x-composite': {
       type: ' scalar',
     },
     'x-composite-base': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-labelObstacle': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-labelAllGroup': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-labelPriority': {
       type: ' scalar',
     },
     'x-allowOverruns': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-autoWrap': {
       type: ' scalar',
     },
     'x-conflictResolution': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-followLine': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-forceLeftToRight': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-goodnessOfFit': {
       type: ' scalar',
@@ -792,7 +792,7 @@ define('ysld/language', ['require','exports','module'], function(require, export
       type: ' scalar',
     },
     'x-group': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-repeat': {
       type: ' scalar',
@@ -807,10 +807,10 @@ define('ysld/language', ['require','exports','module'], function(require, export
       type: ' scalar',
     },
     'x-partials': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-polygonAlign': {
-      type: ' scalar',
+      type: 'bool',
     },
     'x-spaceAround': {
       type: ' scalar',
