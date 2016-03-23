@@ -263,7 +263,7 @@ define('ysld/language', ['require','exports','module'], function(require, export
   fill-color: ${1:gray}\n\
   fill-opacity: ${2:0.75}\n\
   stroke-color: ${3:black}\n\
-  stroke-widhh: ${4:1}\n\
+  stroke-width: ${4:1}\n\
   ',
       children: [
         'fill-color',
