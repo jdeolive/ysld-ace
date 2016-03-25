@@ -77,7 +77,7 @@ define('ysld/completer', ["require", "exports", "module"], function(require, exp
             values = ['true', 'false'];
           }
           if (values) {
-            callback(null, values.map(function(v) {
+            callback(null, values.map(function(v, i) {
               // caption: caption,
               //   snippet: s.content,
               //   meta: s.tabTrigger && !s.name ? s.tabTrigger + "\u21E5 " : "snippet",
@@ -85,7 +85,8 @@ define('ysld/completer', ["require", "exports", "module"], function(require, exp
               return {
                 caption: v,
                 snippet: v + '\n',
-                type: 'snippet'
+                type: 'snippet',
+                score: values.length-i
               }
             }));
           }
